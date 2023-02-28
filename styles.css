@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.jpeg");
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Fredoka One";
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+#controlBar {
+    background-color:rgb(255, 232, 232);
+    width:1000px;
+    border-radius: 10%;
+    padding: 0 0 2em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heightFrame, #widthFrame, #cubeSize, #divColorCanvas, #divBrush {
+    text-align: center;
+}
+
+#formSizeCanvas {
+    border: 2px purple solid;
+    padding: 0 1em 1em;
+    margin:1em auto auto;
+}
+   
+h2 {
+    text-align: center;
+}
+
+#submitSizeCanvas {
+    width: 20em;
+    margin: 1em auto auto;
+}
+
+#reset {
+    height: 30px;
+    padding: 0 3em;
+    margin: 3em;
+    border-radius:64px;
+}
+
+#colorModule, #colorCanvas {
+    padding: 0 0.3em;
+    width: 100px;
+    margin: 0 1em; 
+}
+
+#pixelCanvas {
+    height: auto;
+    width: auto;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(var(--widthSize), auto);
+    grid-template-rows: repeat(var(--heightSize), auto);
+}
+
+input[type=number] {
+    width: 5em;
+}
+
+.pixel {
+    height: calc(var(--cubeSize)*1px);
+    width: calc(var(--cubeSize)*1px);
+    background-color:rgb(142, 250, 79);
+    border: 1px solid purple;
+}
+
